@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Programı | Barış Aydın</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .education-container {
+            position: relative;
+            z-index: 10;
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .education-header h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 10px;
+        }
+
+        .education-subtitle {
+            font-size: 1.2rem;
+            color: #ddd;
+            font-weight: 200;
+            margin-bottom: 50px;
+            letter-spacing: 1px;
+        }
+
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .level-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: 0.4s;
+        }
+
+        .level-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .level-card h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .features-list {
+            text-align: left;
+            display: inline-block;
+            max-width: 600px;
+            margin: 40px 0;
+            padding: 30px;
+            border-top: 1px solid var(--gold);
+            border-bottom: 1px solid var(--gold);
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #eee;
+        }
+
+        .feature-item i {
+            color: var(--gold);
+        }
+
+        .cta-box {
+            margin-top: 40px;
+        }
+
+        .back-home {
+            display: block;
+            margin-top: 50px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-master"></div>
+
+    <div class="education-container">
+        <div class="education-header">
+            <h1>Bağlama Çalmayı Erteleme</h1>
+            <p class="education-subtitle">Her yaşa ve her seviyeye uygun profesyonel eğitim metodu.</p>
+        </div>
+
+        <div class="level-grid">
+            <div class="level-card">
+                <h3>Başlangıç</h3>
+                <p>Temel tutuş, tezene teknikleri ve basit ezgilerle ilk adım.</p>
+            </div>
+            <div class="level-card">
+                <h3>Orta</h3>
+                <p>Süsleme teknikleri, farklı makamlar ve popüler türküler.</p>
+            </div>
+            <div class="level-card">
+                <h3>İleri Seviye</h3>
+                <p>Üst düzey icra teknikleri, farklı düzenler ve akademik repertuvar.</p>
+            </div>
+        </div>
+
+        <div class="features-list">
+            <div class="feature-item"><span>✦</span> Bireysel Program: Size özel hazırlanan çalışma takvimi.</div>
+            <div class="feature-item"><span>✦</span> Her Yaşa Uygun: Çocuklardan yetişkinlere özel yaklaşım.</div>
+            <div class="feature-item"><span>✦</span> Anlaşılır ve Keyifli: Teorik bilgiyi sıkılmadan pratiğe döküyoruz.</div>
+        </div>
+
+        <div class="cta-box">
+            <a href="iletişim.html" class="btn">HEMEN BAŞLA</a>
+        </div>
+
+        <a href="index.html" class="back-home">← ANA SAYFAYA DÖN</a>
+    </div>
+
+</body>
+</html> 

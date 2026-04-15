@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barış Aydın | Bağlama Sanatı & Akademi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-master">
+        <div id="particle-box"></div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="brand">Barış Aydın</div>
+                <h1 class="title">Telin Kalbe <br> Yolculuğu</h1>
+                <div class="btn-group">
+                    <a href="egitim.html" class="btn">EĞİTİMİ GÖR</a>
+                    <a href="https://www.instagram.com/barisaydinmusic/reels/" target="_blank" class="btn">Sanatımız</a>
+                    <a href="sorular.html" class="btn">SSS</a>
+                    <a href="iletişim.html" class="btn">İLETİŞİM</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="main-promo-box">
+                    <div class="main-promo-img">
+                        <img src="resim.jpg" alt="Bağlama Dersi">
+                    </div>
+                    <div class="main-promo-text">
+                        <h2>Sıfırdan Bağlama Dersi</h2>
+                        <p>Özel metodumuzla kısa sürede sevdiğiniz türküleri çalmaya başlayın.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="promo-card">
+        <img src="resim1.jpg" alt="Barış Aydın">
+        <div class="promo-info">
+            <span>Barış Aydın</span>
+            <p>Bağlama Eğitmeni</p>
+        </div>
+    </div>
+
+    <script>
+        const pBox = document.getElementById('particle-box');
+        for (let i = 0; i < 45; i++) {
+            const p = document.createElement('div');
+            p.className = 'glow-particle';
+            const size = Math.random() * 3 + 1 + 'px';
+            p.style.width = size; 
+            p.style.height = size;
+            p.style.left = Math.random() * 100 + 'vw';
+            p.style.animationDelay = Math.random() * 10 + 's';
+            pBox.appendChild(p);
+        }
+    </script>
+</body>
+</html>
